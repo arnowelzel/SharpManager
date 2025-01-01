@@ -35,7 +35,7 @@ namespace SharpManager.Views
         /// <param name="e">The <see cref="RequestNavigateEventArgs"/> instance containing the event data.</param>
         private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
         {
-            System.Diagnostics.Process.Start(
+            Process.Start(
                 new ProcessStartInfo(e.Uri.ToString())
                 {
                     UseShellExecute = true
